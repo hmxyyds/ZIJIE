@@ -1,0 +1,144 @@
+{
+  "created_utc": "2026-09-20T02:25:22.465120+00:00",
+  "config": {
+    "method": "clean",
+    "epochs": 10,
+    "batch_size": 16,
+    "lr": 0.0001,
+    "lr_milestones": [
+      7,
+      10
+    ],
+    "lr_gamma": 0.2,
+    "weight_decay": 0.01,
+    "label_smoothing": 0.0,
+    "dropout": 0.0,
+    "freeze_backbone_epochs": 0,
+    "clean_augmentations": true,
+    "seed": 42,
+    "device": "auto",
+    "threads": 4,
+    "dataset": "/kaggle/working/byteformer-mnist-course/data/course_1of10/mnist_clean_balanced.npz",
+    "weights": "/kaggle/working/byteformer-mnist-course/checkpoints/imagenet_jpeg_q100_k8_w128.pt",
+    "output": "outputs/comparison_batch16",
+    "train_samples": 5000,
+    "val_samples": 1000,
+    "test_samples": 1000,
+    "encoding": "JPEG_RGB_28x28_quality100_subsampling0_pad2048_v1",
+    "corrected_masks": true,
+    "selection": "clean validation accuracy"
+  },
+  "best_epoch": 10,
+  "best_selection_score": 0.943,
+  "elapsed_seconds": 218.84324454199987,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.820564826774597,
+      "train_accuracy": 0.3006,
+      "val_clean_loss": 1.103206431657076,
+      "val_clean_accuracy": 0.602,
+      "selection_score": 0.602,
+      "lr": 0.0001,
+      "seconds": 20.502282275000198
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.9110075682163239,
+      "train_accuracy": 0.69,
+      "val_clean_loss": 0.6843910330198705,
+      "val_clean_accuracy": 0.785,
+      "selection_score": 0.785,
+      "lr": 0.0001,
+      "seconds": 20.19964801499964
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.5851209314584732,
+      "train_accuracy": 0.8194,
+      "val_clean_loss": 0.4484894981570542,
+      "val_clean_accuracy": 0.866,
+      "selection_score": 0.866,
+      "lr": 0.0001,
+      "seconds": 20.68769070799999
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.46516719307899473,
+      "train_accuracy": 0.8576,
+      "val_clean_loss": 0.38962377890944483,
+      "val_clean_accuracy": 0.887,
+      "selection_score": 0.887,
+      "lr": 0.0001,
+      "seconds": 21.254156023000178
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.4108384476661682,
+      "train_accuracy": 0.8758,
+      "val_clean_loss": 0.35579859181866047,
+      "val_clean_accuracy": 0.9,
+      "selection_score": 0.9,
+      "lr": 0.0001,
+      "seconds": 21.857522181999684
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.3776942395865917,
+      "train_accuracy": 0.887,
+      "val_clean_loss": 0.4017633998058736,
+      "val_clean_accuracy": 0.881,
+      "selection_score": 0.881,
+      "lr": 0.0001,
+      "seconds": 22.593249089999972
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.3387175350919366,
+      "train_accuracy": 0.902,
+      "val_clean_loss": 0.3330847003608942,
+      "val_clean_accuracy": 0.9,
+      "selection_score": 0.9,
+      "lr": 0.0001,
+      "seconds": 23.147978003999924
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.2088378809571266,
+      "train_accuracy": 0.9446,
+      "val_clean_loss": 0.27439457483496515,
+      "val_clean_accuracy": 0.932,
+      "selection_score": 0.932,
+      "lr": 2e-05,
+      "seconds": 22.58188370500011
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.14196909807519986,
+      "train_accuracy": 0.9632,
+      "val_clean_loss": 0.25646452950290405,
+      "val_clean_accuracy": 0.936,
+      "selection_score": 0.936,
+      "lr": 2e-05,
+      "seconds": 22.358298915999967
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.13709330693539232,
+      "train_accuracy": 0.9646,
+      "val_clean_loss": 0.23746980491559952,
+      "val_clean_accuracy": 0.943,
+      "selection_score": 0.943,
+      "lr": 2e-05,
+      "seconds": 22.53456424800015
+    }
+  ],
+  "pretrained_sha256": "13646ae929d20f3fb48f0a25e0a945dd59ad070746dbf651c6b2a64856867d82",
+  "dataset_sha256": "526a1d75f69276de5146a918cdfc3b5208f881ca280b290a88d9a8271e97aeaa",
+  "environment": {
+    "python": "3.12.13",
+    "torch": "2.10.0+cu128",
+    "device": "cuda",
+    "hardware": "Tesla T4"
+  }
+}
